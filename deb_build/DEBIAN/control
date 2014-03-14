@@ -1,0 +1,10 @@
+Package: ${PACKAGE_NAME}
+Version: ${VERSION}
+Architecture: all
+Maintainer: ReThought <recomm@rethought-solutions.com>
+Installed-Size: ${SIZE}
+Depends: python-virtualenv, python-pip, python-dev
+Section: webapps
+Priority: optional
+Homepage: http://www.rethought-solutions.com
+Description: Sentry application log aggregator

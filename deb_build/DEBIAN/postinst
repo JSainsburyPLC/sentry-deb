@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# Post-installation of sentry creates virtualenv and installs requirements
+ROOT=/srv/sentry
+cd $ROOT
+virtualenv .
+. bin/activate
+$ROOT/bin/pip install distribute==0.7.3
+$ROOT/bin/pip install pip==1.4.1
+$ROOT/bin/pip install wheel==0.22.0
+$ROOT/bin/pip install --use-wheel --no-index --no-deps --find-links=$ROOT/wheel/ -r $ROOT/requirements.txt

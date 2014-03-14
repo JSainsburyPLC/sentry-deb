@@ -1,0 +1,5 @@
+.venv
+wheel
+*.deb
+md5.*
+.*.swp
