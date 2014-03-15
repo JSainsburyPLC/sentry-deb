@@ -14,3 +14,9 @@ installing to - e.g. 64bit Ubuntu, for example.
 This assumption is due to the fact that, to speed up installation on target
 machines, the deb packages together lots of pip Wheels which can have non
 pure python modules compiled for the platform.
+
+What does it do?
+----------------
+
+Creates a deb that installs a virtualenv in ``/srv/sentry`` on the target host
+complete with the necessary dependencies to run sentry.
